@@ -11,3 +11,7 @@ teamcity2dsl {
 dependencies {
   testCompile 'junit:junit:4.12'
 }
+
+tasks.withType(Test) {
+  dependsOn xml2dsl
+}
