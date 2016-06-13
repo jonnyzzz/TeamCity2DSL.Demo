@@ -1,0 +1,9 @@
+
+plugins {
+  id "org.jonnyzzz.teamcity.dsl" version "0.1.15"
+}
+
+teamcity2dsl {
+  extension 'org.jonnyzzz.teamcity.dsl.special:commandline-runner:0.1.15'
+}
+
