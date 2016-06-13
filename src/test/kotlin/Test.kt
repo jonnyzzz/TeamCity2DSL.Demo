@@ -1,4 +1,7 @@
+
+import org.hamcrest.core.StringContains
 import org.jonnyzzz.teamcity.dsl_generated.Build_Jonnyzzz_Test
+import org.junit.Assert
 import org.junit.Test
 
 /**
@@ -6,8 +9,11 @@ import org.junit.Test
  */
 
 class DSLTest {
+
   @Test
   fun testSomeDSLProperty() {
-    println(Build_Jonnyzzz_Test.id)
+    println(Build_Jonnyzzz_Test.id.id)
+
+    Assert.assertThat(Build_Jonnyzzz_Test.id.id, StringContains("Jonnyzzz"))
   }
 }
