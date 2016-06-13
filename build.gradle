@@ -7,3 +7,7 @@ teamcity2dsl {
   extension 'org.jonnyzzz.teamcity.dsl.special:commandline-runner:0.1.15'
 }
 
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+}
